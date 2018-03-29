@@ -14,15 +14,18 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Owner and group for JIRA.
-jira_owner: "daemon"
-jira_group: "daemon"
+jira_version: "7.8.1"
+
+# User and group for JIRA.
+jira_user: "jira"
+jira_group: "jira"
 
 # Location for the $JIRA_HOME directory.
 jira_home: "/var/atlassian/application-data/jira"
 
 # Location for the $JIRA_CATALINA directory.
 jira_catalina: "/opt/atlassian/jira"
+jira_catalina_install: "/opt/atlassian/jira-{{ jira_version }}"
 
 # JIRA JVM minimal and maximum memory usage.
 jira_jvm_minimum_memory: "384m"
@@ -44,4 +47,4 @@ jira_scheme: ~
 jira_jvm_support_recommended_args: "-Datlassian.plugins.enable.wait=300"
 
 # URL for download JIRA archive.
-jira_url: "https://downloads.atlassian.com/software/jira/downloads/atlassian-jira-core-7.7.0.tar.gz"
+jira_url: "https://downloads.atlassian.com/software/jira/downloads/atlassian-jira-core-{{ jira_version }}.tar.gz"
