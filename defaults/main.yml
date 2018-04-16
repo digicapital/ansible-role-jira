@@ -48,3 +48,6 @@ jira_jvm_support_recommended_args: "-Datlassian.plugins.enable.wait=300"
 
 # URL for download JIRA archive.
 jira_url: "https://downloads.atlassian.com/software/jira/downloads/atlassian-jira-core-{{ jira_version }}.tar.gz"
+
+# URL for JIRA software
+jira_soft_url: "https://downloads.atlassian.com/software/jira/downloads/binary/atlassian-jira-software-{{ jira_version }}.tar.gz"
